@@ -3,134 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gabriel Marques - Junior PHP Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Gabriel Marques - Desenvolvedor PHP Júnior</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
   <style>
     body {
-      background: var(--bs-light);
-      transition: background 0.3s, color 0.3s;
-    }
-    .perfil-img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid var(--bs-primary);
-    }
-    .sidebar, .content {
-      background: var(--bs-white);
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    .badge {
-      font-size: 0.9em;
-    }
-    a {
-      text-decoration: none;
-    }
-    h2, h4 {
-      color: var(--bs-primary);
+      background-color: #f8f9fa;
+      transition: background-color 0.3s, color 0.3s;
     }
     .dark-mode {
-      --bs-light: #212529;
-      --bs-white: #343a40;
-      --bs-primary: #0d6efd;
-      color: white;
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+    .profile-img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    .progress {
+      height: 20px;
+      background-color: #e9ecef;
+    }
+    .progress-bar {
+      font-weight: bold;
+    }
+    #curriculoContent {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      #curriculoContent {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
-<body>
-<div class="container py-5">
+
+<body class="container py-4">
+
+  <!-- Botões de Ação -->
   <div class="text-end mb-4">
-    <button id="toggleMode" class="btn btn-primary">Modo Claro/Escuro</button>
+    <button id="toggleMode" class="btn btn-primary me-2">
+      <i class="bi bi-sun-fill"></i> Claro/Escuro
+    </button>
+    <button id="downloadPdf" class="btn btn-success">
+      <i class="bi bi-download"></i> Baixar Currículo em PDF
+    </button>
   </div>
-  <div class="row">
-    <!-- Sidebar -->
-    <div class="col-md-4">
-      <div class="sidebar text-center">
-        <img src="imagens/foto.jpg" alt="Foto de Gabriel Marques" class="perfil-img mb-3">
+
+  <!-- Conteúdo do Currículo -->
+  <div id="curriculoContent">
+
+    <div class="row">
+      <!-- Lado esquerdo: Perfil -->
+      <div class="col-md-4">
+        <img src="imagens/foto.jpg" alt="Foto Gabriel Marques" class="profile-img">
+
         <h2>Gabriel Marques</h2>
         <h5 class="text-muted">Junior PHP Developer</h5>
 
         <hr>
-        <h4>Contato</h4>
-        <p><strong>Telefone:</strong> +55 (11) 9 7628-2055</p>
-        <p><strong>Email:</strong> gmarquesdev758@gmail.com</p>
-        <p><strong>Localização:</strong> Barueri - SP</p>
-        <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
-        <p><a href="https://github.com" target="_blank">GitHub</a></p>
+
+        <h5>Contato</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-telephone"></i> +55 (11) 9 7628-2055</li>
+          <li><i class="bi bi-envelope"></i> gmarquesdev758@gmail.com</li>
+          <li><i class="bi bi-geo-alt"></i> Barueri - SP</li>
+          <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><i class="bi bi-github"></i> <a href="https://github.com" target="_blank">GitHub</a></li>
+        </ul>
 
         <hr>
+
+        <h5>Idiomas</h5>
+        <ul class="list-unstyled">
+          <li>🇧🇷 Português (Nativo)</li>
+          <li>🇺🇸 Inglês (Iniciante)</li>
+        </ul>
+
+      </div>
+
+      <!-- Lado direito: Informações -->
+      <div class="col-md-8">
+
+        <h4>Resumo</h4>
+        <p>Desenvolvedor Júnior PHP com conhecimento em MVC, orientação a objetos, consultas SQL, JavaScript, jQuery e AJAX para criação de aplicações web dinâmicas. Experiência em automação de processos com Python e desenvolvimento de sistemas BPM Workflow focados em análise de crédito e validação cadastral.</p>
+
+        <hr>
+
         <h4>Skills</h4>
-        <div>
-          <span class="badge bg-primary m-1">PHP</span>
-          <span class="badge bg-primary m-1">JavaScript</span>
-          <span class="badge bg-primary m-1">jQuery</span>
-          <span class="badge bg-primary m-1">AJAX</span>
-          <span class="badge bg-primary m-1">Python</span>
-          <span class="badge bg-primary m-1">HTML</span>
-          <span class="badge bg-primary m-1">CSS</span>
-          <span class="badge bg-primary m-1">Bootstrap</span>
-          <span class="badge bg-primary m-1">SQL</span>
+        <div class="mb-2">
+          <p>PHP</p>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 80%;">Avançado</div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <p>JavaScript</p>
+          <div class="progress">
+            <div class="progress-bar bg-info" style="width: 65%;">Médio</div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <p>Jquery & AJAX</p>
+          <div class="progress">
+            <div class="progress-bar bg-info" style="width: 60%;">Médio</div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <p>Python</p>
+          <div class="progress">
+            <div class="progress-bar bg-warning" style="width: 50%;">Básico</div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <p>HTML & CSS/Bootstrap</p>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 70%;">Avançado</div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <p>Banco de Dados SQL</p>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 75%;">Avançado</div>
+          </div>
         </div>
 
         <hr>
-        <h4>Idiomas</h4>
-        <p>Português (Nativo)</p>
-        <p>Inglês (Iniciante)</p>
-      </div>
-    </div>
 
-    <!-- Main content -->
-    <div class="col-md-8">
-      <div class="content">
-        <h2>Resumo Profissional</h2>
-        <p>Desenvolvedor Júnior PHP com experiência em MVC, orientação a objetos, consultas SQL e interatividade dinâmica com JavaScript, jQuery e AJAX. Conhecimento sólido em front-end usando HTML, CSS e Bootstrap. Experiência em automação de processos utilizando Python e desenvolvimento de sistemas BPM Workflow para análise de crédito e validação cadastral.</p>
-      </div>
-
-      <div class="content">
-        <h2>Experiência Profissional</h2>
-        <h5>C&M Software</h5>
-        <p><strong>Engenheiro de Software Junior</strong> | Jan 2024 - Jan 2025</p>
-        <p>Desenvolvimento de sistemas PHP, consultas SQL, interatividade dinâmica com jQuery e AJAX, automação de processos e documentação técnica.</p>
-
-        <h5 class="mt-4">C&M Software</h5>
-        <p><strong>Analista de Suporte ao Cliente</strong> | Abr 2021 - Jan 2024</p>
-        <p>Mapeamento de requisitos, gestão de prazos, suporte técnico, desenvolvimento de sistemas de análise de crédito.</p>
-      </div>
-
-      <div class="content">
-        <h2>Formação Acadêmica & Cursos</h2>
+        <h4>Experiência Profissional</h4>
         <ul>
-          <li>Alura - Orientação a objetos com PHP (10h - FEV/2025)</li>
-          <li>Alura - HTML e CSS - Flexbox (8h - MAR/2025)</li>
-          <li>Alura - Python - Iniciando (12h - JUL/2023)</li>
-          <li>Alura - Docker - Containers (10h - MAR/2025)</li>
-          <li>Youtube - Python - Curso Guanabara (40h - 2021/2022)</li>
-          <li>Speak English - Inglês (cursando desde JUL/2023)</li>
+          <li><strong>Engenheiro de Software Junior</strong> — C&M Software (Jan 2024 - Jan 2025)</li>
+          <li><strong>Analista de Suporte ao Cliente</strong> — C&M Software (Abr 2021 - Jan 2024)</li>
         </ul>
-      </div>
 
-      <div class="content">
-        <h2>Projetos no GitHub</h2>
+        <hr>
+
+        <h4>Atividades</h4>
         <ul>
-          <li><a href="https://github.com/gmarquesdev/projeto-php" target="_blank">Sistema PHP com MVC</a></li>
-          <li><a href="https://github.com/gmarquesdev/site-bootstrap" target="_blank">Site Responsivo com Bootstrap</a></li>
-          <li><a href="https://github.com/gmarquesdev/bot-python" target="_blank">Bot de Automação Python</a></li>
+          <li>Desenvolvimento PHP MVC focado em softwares web.</li>
+          <li>Manipulação de arrays, tabelas SQL, criação de consultas otimizadas.</li>
+          <li>Implementação de interatividade com JavaScript, jQuery e AJAX.</li>
+          <li>Estilização de front-end com CSS e Bootstrap.</li>
+          <li>Automação de processos internos usando Python.</li>
+          <li>Implantação e análise de sistemas BPM Workflow em crédito e cadastro.</li>
         </ul>
-      </div>
 
+        <hr>
+
+        <h4>Formação Acadêmica e Cursos</h4>
+        <ul>
+          <li>Alura:
+            <ul>
+              <li>Orientação a Objetos com PHP (10h - FEV/2025)</li>
+              <li>HTML e CSS - Flexbox (8h - MAR/2025)</li>
+              <li>Python - Iniciando e Avançado (24h total - 2023)</li>
+              <li>Docker - Containers (10h - MAR/2025)</li>
+            </ul>
+          </li>
+          <li>Youtube (Curso Python - Guanabara, 40h)</li>
+          <li>Speak English (Escola Particular) — Cursando inglês (JUL/2023)</li>
+        </ul>
+
+        <hr>
+
+        <h4>Projetos no GitHub</h4>
+        <ul>
+          <li><a href="#">Projeto 1 - Nome do Projeto</a></li>
+          <li><a href="#">Projeto 2 - Nome do Projeto</a></li>
+        </ul>
+
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  const toggleBtn = document.getElementById('toggleMode');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
+  <!-- Scripts finais -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script>
+    // Alternar modo claro/escuro
+    document.getElementById('toggleMode').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    // Gerar e baixar currículo como PDF
+    document.getElementById('downloadPdf').addEventListener('click', () => {
+      const element = document.getElementById('curriculoContent');
+      const opt = {
+        margin:       0.5,
+        filename:     'curriculo_gabriel_marques.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().from(element).set(opt).save();
+    });
+  </script>
 
 </body>
 </html>
