@@ -1,0 +1,60 @@
+{
+  "nome": "Gabriel Marques",
+  "titulo": "Junior PHP Developer",
+  "contato": {
+    "telefone": "+55 (11) 9 7628-2055",
+    "email": "gmarquesdev758@gmail.com",
+    "cidade": "Barueri - SP",
+    "linkedin": "https://www.linkedin.com",
+    "github": "https://github.com"
+  },
+  "skills": [
+    "PHP", "JavaScript", "jQuery", "Requisição Ajax", "Python",
+    "HTML", "CSS", "BootStrap", "Banco de dados SQL"
+  ],
+  "idiomas": [
+    "Português (Língua Materna)", "Inglês (Iniciante)"
+  ],
+  "resumo": "Desenvolvedor Júnior PHP com MVC, orientação a objetos e consultas SQL. Habilidades em JavaScript, jQuery e AJAX para interatividade dinâmica, além de HTML, CSS e BootStrap para criação de front ends eficientes. Experiência em automação de processos com Python, contribuindo para ganhos de produtividade. Conhecimento em sistemas BPM Workflow aplicados a análise de crédito e validação cadastral.",
+  "experiencia": [
+    {
+      "periodo": "JAN 2024 - JAN 2025",
+      "empresa": "C&M Software",
+      "cargo": "Engenheiro de Software Junior"
+    },
+    {
+      "periodo": "ABR 2021 - JAN 2024",
+      "empresa": "C&M Software",
+      "cargo": "Analista de suporte ao cliente"
+    }
+  ],
+  "atividades": [
+    "Desenvolvedor Júnior PHP com MVC, focado na criação de software;",
+    "Manipulação de arrays, construção de tabelas no banco de dados e elaboração de consultas e tabelas SQL;",
+    "JavaScript e jQuery com AJAX para interatividade dinâmica na página e envio de dados de formulário;",
+    "CSS com BootStrap para estilizar o Front-end;",
+    "Recolha de requisitos e mapeamento de processos para implementação de sistemas, gestão de prazos e criação de documentação;",
+    "Desenvolvimento de sistemas BPM Workflow para análise de crédito e validação cadastral;",
+    "Análises voltadas às particularidades de cada projeto."
+  ],
+  "formacao": [
+    "Alura - Orientação a objetos com PHP - Herança, Polimorfismo e Interfaces (10h - FEV/2025)",
+    "Alura - HTML e CSS - Flexbox (8h - MAR/2025)",
+    "Alura - HTML e CSS - Estrutura de arquivos e tags (8h - MAR/2025)",
+    "Alura - Python - Iniciando (12h - JUL/2023)",
+    "Alura - Python - Avançando na linguagem (12h - SET/2023)",
+    "Alura - Docker - Criando e gerenciando containers (10h - MAR/2025)",
+    "Youtube - Python - Guanabara (40h - 2021/2022)",
+    "Speak English (escola particular) - Inglês - JUL/2023 (cursando)"
+  ],
+  "projetos": [
+    {
+      "titulo": "Projeto Exemplo 1",
+      "link": "https://github.com/seuusuario/projeto1"
+    },
+    {
+      "titulo": "Projeto Exemplo 2",
+      "link": "https://github.com/seuusuario/projeto2"
+    }
+  ]
+}
