@@ -3,60 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Currículo - Gabriel Marques</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Gabriel Marques - Junior PHP Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f4f4f4;
+    }
+    .perfil-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0d6efd;
+    }
+    .sidebar {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .badge {
+      font-size: 0.9em;
+    }
+    a {
+      text-decoration: none;
+    }
+    h2, h4 {
+      color: #0d6efd;
+    }
+  </style>
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="text-center">
-      <img id="foto" src="imagens/foto.jpg" alt="Foto Gabriel Marques" class="rounded-circle" width="150">
-      <h1 id="nome"></h1>
-      <h3 id="titulo" class="text-muted"></h3>
+<div class="container py-5">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-4">
+      <div class="sidebar text-center">
+        <img src="imagens/foto.jpg" alt="Foto de Gabriel Marques" class="perfil-img mb-3">
+        <h2>Gabriel Marques</h2>
+        <h5 class="text-muted">Junior PHP Developer</h5>
+
+        <hr>
+        <h4>Contato</h4>
+        <p><strong>Telefone:</strong> +55 (11) 9 7628-2055</p>
+        <p><strong>Email:</strong> gmarquesdev758@gmail.com</p>
+        <p><strong>Localização:</strong> Barueri - SP</p>
+        <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com" target="_blank">GitHub</a></p>
+
+        <hr>
+        <h4>Skills</h4>
+        <div>
+          <span class="badge bg-primary m-1">PHP</span>
+          <span class="badge bg-primary m-1">JavaScript</span>
+          <span class="badge bg-primary m-1">jQuery</span>
+          <span class="badge bg-primary m-1">AJAX</span>
+          <span class="badge bg-primary m-1">Python</span>
+          <span class="badge bg-primary m-1">HTML</span>
+          <span class="badge bg-primary m-1">CSS</span>
+          <span class="badge bg-primary m-1">Bootstrap</span>
+          <span class="badge bg-primary m-1">SQL</span>
+        </div>
+
+        <hr>
+        <h4>Idiomas</h4>
+        <p>Português (Nativo)</p>
+        <p>Inglês (Iniciante)</p>
+      </div>
     </div>
 
-    <section class="mt-4">
-      <h4>Contato</h4>
-      <ul id="contato" class="list-unstyled"></ul>
-    </section>
+    <!-- Main content -->
+    <div class="col-md-8">
+      <div class="content">
+        <h2>Resumo Profissional</h2>
+        <p>Desenvolvedor Júnior PHP com experiência em MVC, orientação a objetos, consultas SQL e interatividade dinâmica com JavaScript, jQuery e AJAX. Conhecimento sólido em front-end usando HTML, CSS e Bootstrap. Experiência em automação de processos utilizando Python e desenvolvimento de sistemas BPM Workflow para análise de crédito e validação cadastral.</p>
+      </div>
 
-    <section class="mt-4">
-      <h4>Skills</h4>
-      <ul id="skills" class="list-inline"></ul>
-    </section>
+      <div class="content">
+        <h2>Experiência Profissional</h2>
+        <h5>C&M Software</h5>
+        <p><strong>Engenheiro de Software Junior</strong> | Jan 2024 - Jan 2025</p>
+        <p>Desenvolvimento de sistemas PHP, consultas SQL, interatividade dinâmica com jQuery e AJAX, automação de processos e documentação técnica.</p>
 
-    <section class="mt-4">
-      <h4>Idiomas</h4>
-      <ul id="idiomas" class="list-unstyled"></ul>
-    </section>
+        <h5 class="mt-4">C&M Software</h5>
+        <p><strong>Analista de Suporte ao Cliente</strong> | Abr 2021 - Jan 2024</p>
+        <p>Mapeamento de requisitos, gestão de prazos, suporte técnico, desenvolvimento de sistemas de análise de crédito.</p>
+      </div>
 
-    <section class="mt-4">
-      <h4>Resumo</h4>
-      <p id="resumo"></p>
-    </section>
+      <div class="content">
+        <h2>Formação Acadêmica & Cursos</h2>
+        <ul>
+          <li>Alura - Orientação a objetos com PHP (10h - FEV/2025)</li>
+          <li>Alura - HTML e CSS - Flexbox (8h - MAR/2025)</li>
+          <li>Alura - Python - Iniciando (12h - JUL/2023)</li>
+          <li>Alura - Docker - Containers (10h - MAR/2025)</li>
+          <li>Youtube - Python - Curso Guanabara (40h - 2021/2022)</li>
+          <li>Speak English - Inglês (cursando desde JUL/2023)</li>
+        </ul>
+      </div>
 
-    <section class="mt-4">
-      <h4>Experiência Profissional</h4>
-      <ul id="experiencia" class="list-unstyled"></ul>
-    </section>
-
-    <section class="mt-4">
-      <h4>Atividades</h4>
-      <ul id="atividades" class="list-unstyled"></ul>
-    </section>
-
-    <section class="mt-4">
-      <h4>Formação Acadêmica</h4>
-      <ul id="formacao" class="list-unstyled"></ul>
-    </section>
-
-    <section class="mt-4">
-      <h4>Projetos no GitHub</h4>
-      <ul id="projetos" class="list-unstyled"></ul>
-    </section>
+      <div class="content">
+        <h2>Projetos no GitHub</h2>
+        <ul>
+          <li><a href="https://github.com/seuusuario/projeto1" target="_blank">Projeto Exemplo 1</a></li>
+          <li><a href="https://github.com/seuusuario/projeto2" target="_blank">Projeto Exemplo 2</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/main.js"></script>
+</div>
 </body>
 </html>
